@@ -1,15 +1,37 @@
 import { useState, useCallback } from "react";
-import { Upload, Image as ImageIcon, Scan, Sparkles, Zap, BarChart3 } from "lucide-react";
+import { Upload, Scan, Sparkles, Zap, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 
+// Matches backend response structure
+interface Dot {
+  x: number;
+  y: number;
+}
+interface Line {
+  start: { x: number; y: number };
+  end: { x: number; y: number };
+}
+interface Shape {
+  type: string;
+  center?: { x: number; y: number };
+  radius?: number;
+  points?: Dot[];
+}
+interface Symmetry {
+  type: string;
+  axes: string[];
+}
 interface AnalysisResult {
-  dotCount: number;
-  symmetryType: string;
+  dots: Dot[];
+  lines: Line[];
+  shapes: Shape[];
+  symmetry: Symmetry;
   complexity: string;
   principles: string[];
   description: string;
+  visualization_url: string;
 }
 
 export function PatternAnalyzer() {
@@ -28,7 +50,6 @@ export function PatternAnalyzer() {
       });
       return;
     }
-
     if (file.size > 10 * 1024 * 1024) {
       toast({
         title: "File too large",
@@ -37,9 +58,7 @@ export function PatternAnalyzer() {
       });
       return;
     }
-
     setSelectedFile(file);
-    
     const reader = new FileReader();
     reader.onload = (e) => {
       setPreview(e.target?.result as string);
@@ -62,36 +81,30 @@ export function PatternAnalyzer() {
     }
   };
 
+  // Main backend API integration
   const analyzePattern = async () => {
     if (!selectedFile) return;
 
     setIsAnalyzing(true);
-    
-    // Simulate API call - In real implementation, this would call Gemini API
+
     try {
-      // This is where you'd integrate with Gemini API
-      // const formData = new FormData();
-      // formData.append('image', selectedFile);
-      // const response = await fetch('/api/analyze-kolam', {
-      //   method: 'POST',
-      //   body: formData
-      // });
-      
-      // Simulated analysis for demo
-      await new Promise(resolve => setTimeout(resolve, 3000));
-      
-      setAnalysisResult({
-        dotCount: Math.floor(Math.random() * 50) + 20,
-        symmetryType: "Radial Symmetry",
-        complexity: "Intermediate",
-        principles: [
-          "Geometric Progression",
-          "Central Point Anchoring", 
-          "Concentric Pattern Flow",
-          "Traditional Dot Matrix"
-        ],
-        description: "This kolam demonstrates classic South Indian geometric principles with intricate dot connections forming a harmonious radial pattern. The design follows traditional mathematical proportions used in temple architecture."
+      const formData = new FormData();
+      formData.append('image', selectedFile);
+
+      // Use .env for backend URL and API Key
+      const backendUrl = import.meta.env.VITE_BACKEND_API_URL || '/api/analyze-kolam';
+      const backendApiKey = import.meta.env.VITE_BACKEND_API_KEY;
+
+      const response = await fetch(backendUrl + "analyze-kolam", {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${backendApiKey}`,
+        },
+        body: formData,
       });
+      if (!response.ok) throw new Error('Backend error');
+      const result: AnalysisResult = await response.json();
+      setAnalysisResult(result);
 
       toast({
         title: "Analysis Complete!",
@@ -135,7 +148,6 @@ export function PatternAnalyzer() {
               onChange={handleFileInput}
               className="hidden"
             />
-            
             {preview ? (
               <div className="space-y-4">
                 <img
@@ -161,7 +173,6 @@ export function PatternAnalyzer() {
               </div>
             )}
           </div>
-
           {selectedFile && (
             <div className="mt-6 text-center">
               <Button
@@ -203,7 +214,7 @@ export function PatternAnalyzer() {
                 </div>
               </div>
               <div className="font-mono text-xs text-green-400/70">
-                └─ Processing Time: 2.84s | Accuracy: 94.7% | Confidence: High
+                └─ Processed
               </div>
             </div>
           </div>
@@ -226,20 +237,16 @@ export function PatternAnalyzer() {
                 <CardContent>
                   <div className="space-y-3">
                     <p className="text-4xl font-mono font-bold text-white">
-                      {analysisResult.dotCount}
+                      {analysisResult.dots.length}
                     </p>
                     <div className="space-y-1">
                       <div className="flex justify-between text-xs font-mono">
                         <span className="text-gray-400">DETECTED:</span>
-                        <span className="text-white">{analysisResult.dotCount}</span>
+                        <span className="text-white">{analysisResult.dots.length}</span>
                       </div>
                       <div className="flex justify-between text-xs font-mono">
                         <span className="text-gray-400">VALIDATED:</span>
-                        <span className="text-green-400">{analysisResult.dotCount}</span>
-                      </div>
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">PRECISION:</span>
-                        <span className="text-kolam-gold">0.97</span>
+                        <span className="text-green-400">{analysisResult.dots.length}</span>
                       </div>
                     </div>
                   </div>
@@ -263,20 +270,16 @@ export function PatternAnalyzer() {
                 <CardContent>
                   <div className="space-y-3">
                     <p className="text-xl font-mono font-semibold text-white mb-1">
-                      {analysisResult.symmetryType}
+                      {analysisResult.symmetry.type}
                     </p>
                     <div className="space-y-1">
                       <div className="flex justify-between text-xs font-mono">
+                        <span className="text-gray-400">AXES:</span>
+                        <span className="text-white">{analysisResult.symmetry.axes.join(', ')}</span>
+                      </div>
+                      <div className="flex justify-between text-xs font-mono">
                         <span className="text-gray-400">AXIS_COUNT:</span>
-                        <span className="text-white">2</span>
-                      </div>
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">ROTATION:</span>
-                        <span className="text-green-400">90°</span>
-                      </div>
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">SCORE:</span>
-                        <span className="text-accent">0.94</span>
+                        <span className="text-white">{analysisResult.symmetry.axes.length}</span>
                       </div>
                     </div>
                   </div>
@@ -302,20 +305,6 @@ export function PatternAnalyzer() {
                     <p className="text-xl font-mono font-semibold text-white mb-1">
                       {analysisResult.complexity}
                     </p>
-                    <div className="space-y-1">
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">LEVEL:</span>
-                        <span className="text-white">7/10</span>
-                      </div>
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">PATTERNS:</span>
-                        <span className="text-green-400">4</span>
-                      </div>
-                      <div className="flex justify-between text-xs font-mono">
-                        <span className="text-gray-400">ENTROPY:</span>
-                        <span className="text-sacred-red">2.34</span>
-                      </div>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -358,7 +347,7 @@ export function PatternAnalyzer() {
             </CardContent>
           </Card>
 
-          {/* Cultural Analysis Terminal */}
+          {/* Visualization & Cultural Analysis */}
           <Card className="bg-black/90 backdrop-blur-sm border-accent/30">
             <CardHeader>
               <CardTitle className="font-mono text-accent flex items-center space-x-2">
@@ -385,6 +374,15 @@ export function PatternAnalyzer() {
                     <div className="text-gray-400">◉ Cultural Authenticity: <span className="text-green-400">High</span></div>
                     <div className="text-gray-400">◉ Regional Classification: <span className="text-accent">South Indian Traditional</span></div>
                   </div>
+                  {analysisResult.visualization_url && (
+                    <div className="mt-4">
+                      <img 
+                        src={analysisResult.visualization_url} 
+                        alt="Kolam Visualization" 
+                        className="w-full max-w-md mx-auto rounded-xl shadow-lg object-contain border border-primary/30"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </CardContent>
