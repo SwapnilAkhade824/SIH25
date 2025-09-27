@@ -1,0 +1,134 @@
+{
+  "dots": [
+    {
+      "center": [
+        100,
+        100
+      ],
+      "radius": 5,
+      "area": 78.5
+    },
+    {
+      "center": [
+        200,
+        150
+      ],
+      "radius": 7,
+      "area": 153.9
+    },
+    {
+      "center": [
+        300,
+        200
+      ],
+      "radius": 6,
+      "area": 113.1
+    }
+  ],
+  "corner_points": [
+    {
+      "point": [
+        50,
+        50
+      ]
+    },
+    {
+      "point": [
+        150,
+        100
+      ]
+    },
+    {
+      "point": [
+        250,
+        200
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "start": [
+        50,
+        50
+      ],
+      "end": [
+        150,
+        50
+      ],
+      "length": 100.0,
+      "angle": 0.0,
+      "type": "straight"
+    },
+    {
+      "start": [
+        100,
+        50
+      ],
+      "end": [
+        100,
+        150
+      ],
+      "length": 100.0,
+      "angle": 90.0,
+      "type": "straight"
+    },
+    {
+      "start": [
+        150,
+        150
+      ],
+      "end": [
+        200,
+        100
+      ],
+      "length": 70.7,
+      "angle": -45.0,
+      "type": "straight"
+    }
+  ],
+  "curves": [
+    {
+      "arc_length": 157.0,
+      "vertices": 8,
+      "type": "curve"
+    },
+    {
+      "arc_length": 94.2,
+      "vertices": 6,
+      "type": "curve"
+    }
+  ],
+  "geometric_patterns": {
+    "line_angles": [
+      0.0,
+      90.0,
+      -45.0
+    ],
+    "angle_frequencies": {
+      "0": 2,
+      "45": 1
+    },
+    "parallel_groups": [],
+    "perpendicular_pairs": [
+      [
+        0,
+        1
+      ]
+    ],
+    "dominant_directions": [
+      {
+        "angle": 0,
+        "count": 2
+      },
+      {
+        "angle": 45,
+        "count": 1
+      }
+    ]
+  },
+  "symmetry": {
+    "horizontal_symmetry": 0.5031375,
+    "vertical_symmetry": 0.4965875,
+    "rotational_90": 0.499625,
+    "rotational_180": 0.5006375,
+    "is_symmetric": 

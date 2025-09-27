@@ -1,0 +1,924 @@
+{
+  "dots": [
+    {
+      "center": [
+        184,
+        140
+      ],
+      "radius": 22,
+      "area": 1520.5308443374597
+    },
+    {
+      "center": [
+        100,
+        182
+      ],
+      "radius": 22,
+      "area": 1520.5308443374597
+    },
+    {
+      "center": [
+        142,
+        182
+      ],
+      "radius": 22,
+      "area": 1520.5308443374597
+    },
+    {
+      "center": [
+        184,
+        98
+      ],
+      "radius": 22,
+      "area": 1520.5308443374597
+    },
+    {
+      "center": [
+        58,
+        140
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    },
+    {
+      "center": [
+        100,
+        58
+      ],
+      "radius": 21,
+      "area": 1385.442360233099
+    },
+    {
+      "center": [
+        58,
+        182
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    },
+    {
+      "center": [
+        184,
+        182
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    },
+    {
+      "center": [
+        142,
+        56
+      ],
+      "radius": 22,
+      "area": 1520.5308443374597
+    },
+    {
+      "center": [
+        58,
+        56
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    },
+    {
+      "center": [
+        58,
+        98
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    },
+    {
+      "center": [
+        184,
+        56
+      ],
+      "radius": 20,
+      "area": 1256.6370614359173
+    }
+  ],
+  "lines": [
+    {
+      "start": [
+        80,
+        109
+      ],
+      "end": [
+        80,
+        45
+      ],
+      "length": 64.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        77,
+        109
+      ],
+      "end": [
+        77,
+        47
+      ],
+      "length": 62.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        129,
+        78
+      ],
+      "end": [
+        194,
+        78
+      ],
+      "length": 65.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        206,
+        63
+      ],
+      "end": [
+        206,
+        34
+      ],
+      "length": 29.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        122,
+        152
+      ],
+      "end": [
+        122,
+        85
+      ],
+      "length": 67.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        161,
+        195
+      ],
+      "end": [
+        161,
+        131
+      ],
+      "length": 64.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        48,
+        75
+      ],
+      "end": [
+        111,
+        75
+      ],
+      "length": 63.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        45,
+        117
+      ],
+      "end": [
+        68,
+        117
+      ],
+      "length": 23.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        38,
+        67
+      ],
+      "end": [
+        38,
+        33
+      ],
+      "length": 34.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        47,
+        160
+      ],
+      "end": [
+        114,
+        160
+      ],
+      "length": 67.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        203,
+        109
+      ],
+      "end": [
+        203,
+        86
+      ],
+      "length": 23.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        35,
+        61
+      ],
+      "end": [
+        35,
+        35
+      ],
+      "length": 26.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        119,
+        152
+      ],
+      "end": [
+        119,
+        86
+      ],
+      "length": 66.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        47,
+        163
+      ],
+      "end": [
+        111,
+        163
+      ],
+      "length": 64.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        36,
+        205
+      ],
+      "end": [
+        63,
+        205
+      ],
+      "length": 27.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        87,
+        117
+      ],
+      "end": [
+        114,
+        117
+      ],
+      "length": 27.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        164,
+        167
+      ],
+      "end": [
+        164,
+        129
+      ],
+      "length": 38.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        86,
+        121
+      ],
+      "end": [
+        115,
+        121
+      ],
+      "length": 29.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        40,
+        36
+      ],
+      "end": [
+        68,
+        36
+      ],
+      "length": 28.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        173,
+        202
+      ],
+      "end": [
+        206,
+        202
+      ],
+      "length": 33.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        35,
+        202
+      ],
+      "end": [
+        69,
+        202
+      ],
+      "length": 34.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        181,
+        33
+      ],
+      "end": [
+        205,
+        33
+      ],
+      "length": 24.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        160,
+        160
+      ],
+      "end": [
+        195,
+        160
+      ],
+      "length": 35.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        77,
+        136
+      ],
+      "end": [
+        78,
+        192
+      ],
+      "length": 56.00892785976178,
+      "angle": 88.97696981133217
+    },
+    {
+      "start": [
+        203,
+        68
+      ],
+      "end": [
+        203,
+        37
+      ],
+      "length": 31.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        153,
+        75
+      ],
+      "end": [
+        198,
+        74
+      ],
+      "length": 45.0111097397076,
+      "angle": -1.273030020056711
+    },
+    {
+      "start": [
+        88,
+        202
+      ],
+      "end": [
+        111,
+        202
+      ],
+      "length": 23.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        203,
+        171
+      ],
+      "end": [
+        203,
+        205
+      ],
+      "length": 34.0,
+      "angle": 90.0
+    },
+    {
+      "start": [
+        79,
+        192
+      ],
+      "end": [
+        80,
+        130
+      ],
+      "length": 62.00806399170998,
+      "angle": -89.07595464722729
+    },
+    {
+      "start": [
+        143,
+        163
+      ],
+      "end": [
+        194,
+        163
+      ],
+      "length": 51.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        39,
+        111
+      ],
+      "end": [
+        39,
+        86
+      ],
+      "length": 25.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        174,
+        36
+      ],
+      "end": [
+        202,
+        36
+      ],
+      "length": 28.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        206,
+        176
+      ],
+      "end": [
+        206,
+        205
+      ],
+      "length": 29.0,
+      "angle": 90.0
+    },
+    {
+      "start": [
+        127,
+        118
+      ],
+      "end": [
+        155,
+        117
+      ],
+      "length": 28.0178514522438,
+      "angle": -2.0454084888872277
+    },
+    {
+      "start": [
+        35,
+        200
+      ],
+      "end": [
+        36,
+        175
+      ],
+      "length": 25.019992006393608,
+      "angle": -87.70938995736148
+    },
+    {
+      "start": [
+        47,
+        78
+      ],
+      "end": [
+        73,
+        78
+      ],
+      "length": 26.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        161,
+        108
+      ],
+      "end": [
+        162,
+        46
+      ],
+      "length": 62.00806399170998,
+      "angle": -89.07595464722729
+    },
+    {
+      "start": [
+        179,
+        205
+      ],
+      "end": [
+        205,
+        205
+      ],
+      "length": 26.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        127,
+        121
+      ],
+      "end": [
+        155,
+        122
+      ],
+      "length": 28.0178514522438,
+      "angle": 2.0454084888872277
+    },
+    {
+      "start": [
+        165,
+        195
+      ],
+      "end": [
+        165,
+        161
+      ],
+      "length": 34.0,
+      "angle": -90.0
+    },
+    {
+      "start": [
+        38,
+        201
+      ],
+      "end": [
+        39,
+        170
+      ],
+      "length": 31.016124838541646,
+      "angle": -88.15238973400541
+    },
+    {
+      "start": [
+        132,
+        36
+      ],
+      "end": [
+        153,
+        36
+      ],
+      "length": 21.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        164,
+        81
+      ],
+      "end": [
+        164,
+        109
+      ],
+      "length": 28.0,
+      "angle": 90.0
+    },
+    {
+      "start": [
+        89,
+        36
+      ],
+      "end": [
+        110,
+        37
+      ],
+      "length": 21.02379604162864,
+      "angle": 2.7263109939062655
+    },
+    {
+      "start": [
+        87,
+        201
+      ],
+      "end": [
+        113,
+        201
+      ],
+      "length": 26.0,
+      "angle": 0.0
+    },
+    {
+      "start": [
+        127,
+        159
+      ],
+      "end": [
+        159,
+        160
+      ],
+      "length": 32.01562118716424,
+      "angle": 1.7899106082460694
+    },
+    {
+      "start": [
+        38,
+        152
+      ],
+      "end": [
+        38,
+        129
+      ],
+      "length": 23.0,
+      "angle": -90.0
+    }
+  ],
+  "shapes": [
+    {
+      "vertices": 8,
+      "area": 55.0,
+      "perimeter": 60.97056245803833,
+      "centroid": [
+        99,
+        202
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 60.0,
+      "perimeter": 63.31370830535889,
+      "centroid": [
+        121,
+        181
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 5,
+      "area": 139.5,
+      "perimeter": 150.3847759962082,
+      "centroid": [
+        196,
+        194
+      ],
+      "shape_type": "5-sided polygon"
+    },
+    {
+      "vertices": 5,
+      "area": 140.5,
+      "perimeter": 150.3847759962082,
+      "centroid": [
+        45,
+        194
+      ],
+      "shape_type": "5-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 69.5,
+      "perimeter": 63.899494767189026,
+      "centroid": [
+        184,
+        161
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 69.5,
+      "perimeter": 63.899494767189026,
+      "centroid": [
+        57,
+        161
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 249.0,
+      "perimeter": 222.28427076339722,
+      "centroid": [
+        157,
+        162
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 255.0,
+      "perimeter": 228.28427076339722,
+      "centroid": [
+        84,
+        162
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 57.0,
+      "perimeter": 58.97056245803833,
+      "centroid": [
+        203,
+        140
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 55.0,
+      "perimeter": 58.97056245803833,
+      "centroid": [
+        38,
+        140
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 4,
+      "area": 89.0,
+      "perimeter": 64.82842707633972,
+      "centroid": [
+        141,
+        119
+      ],
+      "shape_type": "quadrilateral"
+    },
+    {
+      "vertices": 5,
+      "area": 86.0,
+      "perimeter": 65.65685415267944,
+      "centroid": [
+        100,
+        119
+      ],
+      "shape_type": "5-sided polygon"
+    },
+    {
+      "vertices": 8,
+      "area": 51.0,
+      "perimeter": 54.14213538169861,
+      "centroid": [
+        204,
+        97
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 4,
+      "area": 144.0,
+      "perimeter": 141.65685415267944,
+      "centroid": [
+        121,
+        118
+      ],
+      "shape_type": "quadrilateral"
+    },
+    {
+      "vertices": 8,
+      "area": 56.0,
+      "perimeter": 58.97056245803833,
+      "centroid": [
+        38,
+        98
+      ],
+      "shape_type": "8-sided polygon"
+    },
+    {
+      "vertices": 6,
+      "area": 64.5,
+      "perimeter": 55.071067690849304,
+      "centroid": [
+        183,
+        76
+      ],
+      "shape_type": "6-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 55.0,
+      "perimeter": 54.485281229019165,
+      "centroid": [
+        121,
+        56
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 254.0,
+      "perimeter": 228.28427076339722,
+      "centroid": [
+        157,
+        76
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 9,
+      "area": 342.0,
+      "perimeter": 288.4264061450958,
+      "centroid": [
+        79,
+        76
+      ],
+      "shape_type": "circle"
+    },
+    {
+      "vertices": 5,
+      "area": 139.5,
+      "perimeter": 150.3847759962082,
+      "centroid": [
+        196,
+        44
+      ],
+      "shape_type": "5-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 50.0,
+      "perimeter": 52.14213538169861,
+      "centroid": [
+        143,
+        35
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 7,
+      "area": 50.0,
+      "perimeter": 52.14213538169861,
+      "centroid": [
+        99,
+        35
+      ],
+      "shape_type": "7-sided polygon"
+    },
+    {
+      "vertices": 5,
+      "area": 139.5,
+      "perimeter": 150.3847759962082,
+      "centroid": [
+        45,
+        44
+      ],
+      "shape_type": "5-sided polygon"
+    }
+  ],
+  "symmetry": {
+    "horizontal_symmetry": 0.9964285714285714,
+    "vertical_symmetry": 0.8890756302521008,
+    "rotational_180": 0.8886554621848739,
+    "is_symmetric": "True",
+    "symmetry_type": "bilateral (both axes)"
+  },
+  "geometric_patterns": {
+    "dominant_angles": [
+      [
+        0,
+        47
+      ]
+    ],
+    "parallel_lines": 531,
+    "perpendicular_lines": 550,
+    "grid_structure": "False"
+  },
+  "classification": {
+    "pattern_type": "pulli_kolam",
+    "complexity_level": "complex",
+    "element_count": 82,
+    "has_dots": true,
+    "has_lines": true,
+    "has_shapes": true
+  }
+}

@@ -1,0 +1,26 @@
+KOLAM PATTERN ANALYSIS REPORT
+=============================================
+
+PATTERN CLASSIFICATION:
+  Type: pulli_kolam
+  Complexity: complex
+  Total Elements: 73
+
+DETECTED ELEMENTS:
+  Dots (Pulli): 20
+  Lines: 51
+  Shapes: 2
+
+SYMMETRY ANALYSIS:
+  Type: bilateral (both axes)
+  Horizontal: 0.937
+  Vertical: 0.870
+  Symmetric: True
+
+GEOMETRIC PROPERTIES:
+  Dominant Angles: 0° (51 lines)
+  Parallel Lines: 625
+  Grid Structure: False
+
+=============================================
+Analysis completed using OpenCV Feature Extractor
